@@ -2,6 +2,11 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Favorite Lollis Family Recipes">
+  <meta name="keywords" content="muffins,blueberries,blueberry,recipe,baking">
+  <meta name="author" content="Julie Lollis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favorite Lollis Family Recipes</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -41,7 +46,8 @@
 
   <section>
     <figure>
-      <a href="https://www.youtube.com/embed/LACbVhgtx9I"><img border="0" src="blueberry-muffins.jpg" alt="blueberry muffins"></a>
+      <a href="https://www.youtube.com/embed/LACbVhgtx9I"><img border="0" src="blueberry-muffins.jpg"
+          alt="blueberry muffins"></a>
       <figcaption>
         <p>Don't these <a href="https://en.wikipedia.org/wiki/Muffin">muffins</a> look tasty?</p>
       </figcaption>
@@ -67,6 +73,38 @@
         golden
         brown on the top and a toothpick inserted in the center of the muffins comes out clean.</li>
     </ol>
+  </section>
+
+  <section>
+    <h2>Submit a Review</h2>
+    <form action="/reviews" method="post">
+      <label for="name">Name: </label>
+      <input type="text" name=name" id="name">
+      <br /><br />
+      <label for="rating">Rating:
+        1<input type="radio" name="rating" value="1" checked>
+        2<input type="radio" name="rating" value="2">
+        3<input type="radio" name="rating" value="3">
+        4<input type="radio" name="rating" value="4">
+        5<input type="radio" name="rating" value="5">
+        <!-- <br />
+        <br /> -->
+        <select id="expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+        <br />
+        <br />
+        <label>Review:
+          <br />
+          <textarea name="review" cols="100" rows="8"></textarea>
+        </label>
+        <br />
+        <input type="submit" value="Submit">
+    </form>
   </section>
 
   <footer>
