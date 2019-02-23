@@ -27,12 +27,7 @@ class WordChainer
 
 end
 
-# if $PROGRAM_NAME == __FILE__
-#   word_chainer = WordChain.new(*ARGV)
-#   word_chainer.run(ARGV[1], ARGV[2])
-# end
-
 if $PROGRAM_NAME == __FILE__
-  # provide file name on command line
-  p WordChainer.new(ARGV.shift).run("duck", "ruby")
+  word_chains = WordChain.new(*ARGV)
+  word_chainer.run(ARGV[1], ARGV[2])
 end
